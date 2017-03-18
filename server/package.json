@@ -13,6 +13,11 @@
     "nodemon": "^1.11.0"
   },
   "dependencies": {
-    "koa": "^2.2.0"
+    "graphql": "^0.9.1",
+    "graphql-server-koa": "^0.6.0",
+    "graphql-tools": "^0.10.1",
+    "koa": "^2.2.0",
+    "koa-bodyparser": "^4.1.0",
+    "koa-router": "^7.0.1"
   }
 }
