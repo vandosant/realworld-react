@@ -6,3 +6,6 @@ services:
       context: ./server
     ports:
       - 3000:3000
+    volumes:
+      - ./server/src:/root/src
+    working_dir: /root/src

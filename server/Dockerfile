@@ -1,6 +1,6 @@
 FROM node:7.7.3
 
-COPY ./package.json /root/
+COPY ./src/package.json /root/
 WORKDIR /root
 
 RUN npm install
