@@ -1,0 +1,12 @@
+{
+  "name": "realworld-react-app",
+  "version": "1.0.0",
+  "main": "app.js",
+  "author": "Nick & Scott",
+  "license": "MIT",
+  "dependencies": {
+    "path": "^0.12.7",
+    "webpack": "^2.2.1",
+    "webpack-dev-server": "^2.4.2"
+  }
+}

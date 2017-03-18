@@ -1,11 +1,19 @@
 version: '2'
 
 services:
+  app:
+    build:
+      context: ./app
+    ports:
+      - 80:3000
+    volumes:
+      - ./app/src:/root/src
+    working_dir: /root/src
+
   server:
     build:
       context: ./server
     ports:
       - 3000:3000
     volumes:
-      - ./server/src:/root/src
-    working_dir: /root/src
+      - ./server:/root/src
