@@ -1,5 +1,7 @@
 # realworld-react
 
+[RealWorld](https://github.com/gothinkster/realworld) app/server implementation with Koa, React, GraphQL, and Yarn.
+
 ## Starting the server in development mode
 
 1. Get a bash prompt inside the server container via `docker-compose run --rm --service-ports server bash`
