@@ -7,8 +7,7 @@ services:
     ports:
       - 80:3000
     volumes:
-      - ./app/src:/root/src
-    working_dir: /root/src
+      - ./app:/root/src
 
   server:
     build:
