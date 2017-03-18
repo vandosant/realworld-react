@@ -20,4 +20,4 @@ WORKDIR /root/src
 EXPOSE 3000
 EXPOSE 5858
 
-CMD [ "node", "--harmony-async-await", "app.js"]
+CMD [ "node", "--harmony-async-await", "src/app.js"]
