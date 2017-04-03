@@ -1,7 +1,7 @@
 const Koa = require('koa');
 const KoaRouter = require('koa-router');
 const koaBody = require('koa-bodyparser');
-const { graphqlKoa } = require('graphql-server-koa');
+const { graphqlKoa, graphiqlKoa } = require('graphql-server-koa');
 
 const schema = require('./data/schema.js');
 
@@ -13,7 +13,9 @@ app.use(koaBody());
 
 router.post('/graphql', graphqlKoa({ schema }));
 router.get('/graphql', graphqlKoa({ schema }));
+router.get('/graphiql', graphiqlKoa({ endpointURL: '/graphql' }));
 
 app.use(router.routes());
 app.use(router.allowedMethods());
 app.listen(PORT);
+console.log(`Running server on port ${PORT}`);
